@@ -120,11 +120,18 @@ a {
     color: #fff;
     border-radius: 9px; }
 
+.btn-flat i {
+  margin-left: 5px; }
+
 .boxHead {
   padding: 11px;
   font-size: 17px;
   font-weight: 600;
-  background: #fff; }
+  background: #0d0950;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .foto {
   margin-top: -31px; }

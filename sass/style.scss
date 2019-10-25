@@ -155,11 +155,21 @@ a {
   }
 }
 
+.btn-flat{
+  i{
+    margin-left: 5px;
+  }
+}
+
 .boxHead {
   padding: 11px;
   font-size: 17px;
   font-weight: 600;
-  background: #fff;
+  background: $color;
+  color:#fff;
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
 }
 
 .foto {

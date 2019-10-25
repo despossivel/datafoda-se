@@ -42,7 +42,7 @@ const initResultado = () => {
       const dados = json.dados;
       const length = dados.length;
 
-      $('.boxHead').html(`${totalVotos} deixaram sua intenção de voto.`);
+      $('.title').html(`${totalVotos} deixaram sua intenção de voto.`);
       $('#wrap').empty();
 
       for (let i = length - 1; i >= 0; i--) {
@@ -55,6 +55,7 @@ const initResultado = () => {
 
         let porcentagem = numeroDeVotos / totalVotos * 100;
         porcentagem = porcentagem.toFixed(2);
+        // ${porcentagem}%
 
         $('#wrap').append(`<div class='boxCandidato z-depth-1' id='${id}'> 
                               <div class='headBox'>
@@ -65,7 +66,7 @@ const initResultado = () => {
                                   ${nome}
                                 </div>
                                 <div class='numero_partido'>
-                                  ${porcentagem}%
+                                 
                                 </div>
                               </div>
                           </div>`);
