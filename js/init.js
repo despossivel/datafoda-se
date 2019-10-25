@@ -18,7 +18,7 @@ const init = () => {
         $('#wrap').append(`<a data-target="modal1" class="modal-trigger boxCandidato z-depth-1" href="#" id='${id}'> 
                             <div class='headBox'>
                               <div class='foto'>
-                                <img src="${foto}" />
+                                <img class="z-depth-1" src="${foto}" />
                               </div>
                               <div class='nome'>
                                 ${nome}
