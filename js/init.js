@@ -1,3 +1,5 @@
+let DADOS, TOTAL;
+
 const init = () => {
 
   $.ajax("./api/candidatos.php")
@@ -42,6 +44,9 @@ const initResultado = () => {
       const dados = json.dados;
       const length = dados.length;
 
+      DADOS = dados;
+      TOTAL = totalVotos;
+ 
       $('.title').html(`${totalVotos} deixaram sua intenção de voto.`);
       $('#wrap').empty();
 
