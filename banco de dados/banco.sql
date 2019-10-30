@@ -33,7 +33,7 @@ ALTER TABLE `votos`
 ADD COLUMN `ip` VARCHAR(255) NULL AFTER `votos`;
 
 
-CREATE TABLE IF NOT EXISTS `votos` (
+CREATE TABLE IF NOT EXISTS `dataFodase`.`votos` (
   `idCandidato` int(11) NOT NULL,
   `votos` int(11) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;

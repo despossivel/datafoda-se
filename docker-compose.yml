@@ -1,0 +1,18 @@
+version: '2'
+services:
+  nginx:
+    build: ./docker/nginx
+    ports:
+      - '8090:80'
+    depends_on:
+      - php
+    volumes:
+      - .:/opt/work
+    links:
+      - php
+    container_name: nginx_AMBIENTE_DEV
+  php:
+    build: ./docker/php
+    volumes:
+      - .:/opt/work
+    container_name: php_AMBIENTE_DEV
