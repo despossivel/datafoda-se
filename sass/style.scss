@@ -21,18 +21,10 @@ a {
   }
 }
 
-// .modal-content{
-//   background: #0d0950 !important;
-//   color: #fff  !important;
-// }
-// .modal-footer{
-//   background: #070435 !important;
-// }
-
 .logoAling {
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   height: 100%;
   position: absolute;
   width: 100%;
@@ -207,7 +199,7 @@ a {
   height: 78%;
 }
 
-@mixin boxCandidato($width: 19%, $marginLeft: 10%) {
+@mixin boxCandidato($width: 19%, $marginLeft: 1.5%) {
   // padding: 8px;
   float: left;
   width: $width;

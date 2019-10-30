@@ -17,7 +17,6 @@ a {
 .logoAling {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
   position: absolute;
   width: 100%; }
@@ -162,7 +161,7 @@ a {
   .boxCandidato {
     float: left;
     width: 28%;
-    margin-left: 10%;
+    margin-left: 1.5%;
     margin-top: 6%;
     background: #fff;
     border-radius: 9px; }
@@ -334,7 +333,7 @@ a {
   .boxCandidato {
     float: left;
     width: 31%;
-    margin-left: 10%;
+    margin-left: 1.5%;
     margin-top: 6%;
     background: #fff;
     border-radius: 9px; }
@@ -506,7 +505,7 @@ a {
   .boxCandidato {
     float: left;
     width: 18%;
-    margin-left: 10%;
+    margin-left: 1.5%;
     margin-top: 6%;
     background: #fff;
     border-radius: 9px; }

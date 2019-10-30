@@ -20,13 +20,13 @@ const init = () => {
         $('#wrap').append(`<a data-target="modal1" class="modal-trigger boxCandidato z-depth-1" href="#" id='${id}'> 
                             <div class='headBox'>
                               <div class='foto'>
-                                <img class="z-depth-1" src="${foto}" />
+                                <img class="z-depth-1" src="../imgs/candidatos/${foto}" />
                               </div>
                               <div class='nome'>
                                 ${nome}
                               </div>
                               <div class='numero_partido'>
-                                ${numero} - ${partido}
+                               
                               </div>
                             </div>
                             </a>`);
@@ -34,7 +34,7 @@ const init = () => {
       }
     })
 }
-
+// ${numero} - ${partido}
 
 const initResultado = () => {
 
@@ -65,7 +65,7 @@ const initResultado = () => {
         $('#wrap').append(`<div class='boxCandidato z-depth-1' id='${id}'> 
                               <div class='headBox'>
                                 <div class='foto'>
-                                  <img src="${foto}" />
+                                  <img src="../imgs/candidatos/${foto}" />
                                 </div>
                                 <div class='nome'>
                                   ${nome}

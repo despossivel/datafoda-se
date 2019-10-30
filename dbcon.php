@@ -5,11 +5,11 @@
 //  $mysqli = new mysqli("143.208.11.38", "root", "Hannibalshaw123.", "datafodase","3306"); //,"13306"
 // $mysqli = new mysqli("localhost", "root", "root", "dataFodase","13306"); //,"13306"
 $mysqli = new \mysqli(
-  'Localhost',
+  '192.168.3.19',
   'root',
   'root',
   'dataFodase',
-  '3306'
+  '13306'
 );
  
 $mysqli->set_charset("utf8");
