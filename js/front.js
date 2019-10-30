@@ -16,30 +16,48 @@ $(document).on('click', '.btnConfirmar', function () {
   $('.modal-footer').hide()
   $('.modal-content').html("<div class='displayFlex'><div class='loaderMin'></div></div>");
 
-  M.toast({
-    html: 'O Voto é secreto e ninguém irá saber sua identidade! :)', classes: 'rounded', outDuration: 400, inDuration: 400, completeCallback: function () {
-      $.ajax(`./api/votar.php?candidato=${id}`)
-        .done(function (json) {
-          let mensage = json.mensage;
-          if (mensage) {
-            $('.modal').css('background-color', '#8bc34a').css('color', '#fff')
-            $('.displayFlex').html("<i class='material-icons'>check</i> <span>Voto efetuado com sucesso!</span>")
-            playSong('comfirmacao');
-            setTimeout(() => location.reload(), 2500)
-          }
-        })
-    }
-  });
+  requestVoto(id);
 
 });
 
+
+$(document).on('click', '.btnBranco', function () {
+  const id = $(this).attr('id')
+
+  $('.modal-footer').hide()
+  $('.modal-content').html("<div class='displayFlex'><div class='loaderMin'></div></div>");
+
+  requestVoto(0);
+
+});
+
+
+
+const requestVoto = (id) => M.toast({
+  html: 'O Voto é secreto e ninguém irá saber sua identidade! :)', classes: 'rounded', outDuration: 400, inDuration: 400, completeCallback: function () {
+    $.ajax(`./api/votar.php?candidato=${id}`)
+      .done(function (json) {
+        let mensage = json.mensage;
+        if (mensage) {
+          $('.modal').css('background-color', '#8bc34a').css('color', '#fff')
+          $('.displayFlex').html("<i class='material-icons'>check</i> <span>Voto efetuado com sucesso!</span>")
+          playSong('comfirmacao');
+          setTimeout(() => location.reload(), 2500)
+        }
+      })
+  }
+});
+
+
+
+$(document).on('click', '.btnCorrigir', () => $('.modal-overlay').click())
 
 
 const roletaView = (object) => {
   $('#wrap').html(`<div class='boxCandidatoBig z-depth-1' id='${object.id}'> 
   <div class='headBox'>
     <div class='foto'>
-      <img class="z-depth-1" src="${object.foto}" />
+      <img class="z-depth-1" src="../imgs/candidatos/${object.foto}" />
     </div>
     <div class='nome'>
       ${object.nome}
@@ -107,7 +125,7 @@ const ganhador = () => {
       <div class='boxCandidatoBigPodioSub z-depth-1' id='${segundo.id}'> 
         <div class='headBox'>
           <div class='foto'>
-            <img class="z-depth-1" src="${segundo.foto}" />
+            <img class="z-depth-1" src="../imgs/candidatos/${segundo.foto}" />
           </div>
           <div class='nome'>
             ${segundo.nome}
@@ -124,7 +142,7 @@ const ganhador = () => {
       <div class='boxCandidatoBigPodio z-depth-1' id='${primeiro.id}'> 
       <div class='headBox'>
         <div class='foto'>
-          <img class="z-depth-1" src="${primeiro.foto}" />
+          <img class="z-depth-1" src="../imgs/candidatos/${primeiro.foto}" />
         </div>
         <div class='nome'>
           ${primeiro.nome}
@@ -142,7 +160,7 @@ const ganhador = () => {
       <div class='boxCandidatoBigPodioSub z-depth-1' id='${terceiro.id}'> 
       <div class='headBox'>
         <div class='foto'>
-          <img class="z-depth-1" src="${terceiro.foto}" />
+          <img class="z-depth-1" src="../imgs/candidatos/${terceiro.foto}" />
         </div>
         <div class='nome'>
           ${terceiro.nome}

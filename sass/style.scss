@@ -36,6 +36,8 @@ a {
 
   img {
     width: 100%;
+    position: fixed;
+    height: 79%;
   }
 }
 
@@ -83,6 +85,18 @@ a {
 
   :hover {
     background: #8e6c08;
+    font-weight: 900;
+    border-radius: 8px;
+  }
+}
+
+.btnResultado {
+  background: #fff;
+  font-weight: 900;
+  border-radius: 8px;
+
+  :hover {
+    background: #e6e4e4;
     font-weight: 900;
     border-radius: 8px;
   }

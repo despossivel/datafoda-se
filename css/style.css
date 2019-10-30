@@ -25,7 +25,9 @@ a {
   position: absolute;
   left: 0; }
   .containerModal img {
-    width: 100%; }
+    width: 100%;
+    position: fixed;
+    height: 79%; }
 
 .loaderMin {
   border: 8px solid #dce1eb;
@@ -65,6 +67,15 @@ a {
   border-radius: 8px; }
   .btnCorrigir :hover {
     background: #8e6c08;
+    font-weight: 900;
+    border-radius: 8px; }
+
+.btnResultado {
+  background: #fff;
+  font-weight: 900;
+  border-radius: 8px; }
+  .btnResultado :hover {
+    background: #e6e4e4;
     font-weight: 900;
     border-radius: 8px; }
 
