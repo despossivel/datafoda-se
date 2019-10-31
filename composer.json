@@ -1,0 +1,13 @@
+{
+    "name": "matheus/datafoda-se",
+    "authors": [
+        {
+            "name": "despossivel",
+            "email": "mattbmoller@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "start":"php -S localhost:8080 -t ./"
+    }
+}
