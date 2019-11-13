@@ -1,6 +1,6 @@
 <?php
 
-include('../dbcon.php');
+include('./dbcon.php');
 
 $candidato = $_GET['candidato'];
 
