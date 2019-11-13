@@ -213,7 +213,7 @@ a {
   height: 78%;
 }
 
-@mixin boxCandidato($width: 19%, $marginLeft: 1.5%) {
+@mixin boxCandidato($width: 10.5%, $marginLeft: 1.5%) {
   // padding: 8px;
   float: left;
   width: $width;
@@ -408,7 +408,7 @@ a {
 
 @media (min-width: 693px) and (max-width: 986px) {
   .boxCandidato {
-    @include boxCandidato(14%, 12%);
+    @include boxCandidato(14%, 10.5%);
   }
   .boxCandidatoBigPodioSub {
     @include boxCandidatoBigPodioSub();
@@ -427,7 +427,7 @@ a {
 
 @media (min-width: 987px) {
   .boxCandidato {
-    @include boxCandidato(18%);
+    @include boxCandidato(10.5%);
   }
 
   .boxCandidatoBigPodioSub {
