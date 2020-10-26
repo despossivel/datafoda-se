@@ -3,7 +3,7 @@ services:
   nginx:
     build: ./docker/nginx
     ports:
-      - '3:80'
+      - '80:80'
     depends_on:
       - php
     volumes:
