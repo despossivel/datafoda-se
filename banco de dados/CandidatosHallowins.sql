@@ -1,3 +1,6 @@
+-- SET SQL_SAFE_UPDATES = 0;
+
+
 INSERT INTO `candidatos`
 (`nome`, `numero`, `partido`, `foto`) 
 VALUES
@@ -21,7 +24,7 @@ VALUES
 ('Maracaipe', '18', '', 'Maracaipe.jpg'),
 ('Mario', '19', '', 'Mario.jpg'),
 ('Maria', '20', '', 'Maria.jpg'),
-('Maik', '21', '', 'Maik.jpg')
+('Maik', '21', '', 'Maik.png'),
 ('Pedro', '22', '', 'Pedro.jpg'),
 ('PH', '23', '', 'PH.jpg'),
 ('Piá', '24', '', 'Pia.jpg'),

@@ -18,12 +18,14 @@ a {
   transform: rotate(30deg);
 }
 
+#wrap {
+  margin-top: 25px;
+}
+
 .logoAling {
+  margin-top: 25px;
   display: flex;
   justify-content: center;
-  height: 100%;
-  position: absolute;
-  width: 100%;
 }
 
 .containerModal {
@@ -206,9 +208,10 @@ a {
 @media (min-width: 1px) and (max-width: 329px) {
   .boxCandidato {
     float: left;
-    width: 28%;
-    margin-left: 1.5%;
-    margin-top: 6%;
+    width: 25%;
+    margin-left: 14%;
+    margin-bottom: 56px;
+    margin-top: 30px;
     background: #fff;
     border-radius: 9px;
   }
@@ -312,11 +315,27 @@ a {
   }
 }
 @media (max-width: 479px) and (min-width: 330px) {
+  .modal {
+    width: 100% !important;
+  }
+  .modal .modal-footer {
+    padding: inherit !important;
+  }
+  .modal .modal-footer .btn-flat {
+    margin: inherit !important;
+    height: 55px !important;
+    border-radius: inherit !important;
+    line-height: 54px !important;
+  }
+
   .boxCandidato {
+    margin-bottom: 30px !important;
+    margin-top: 56px !important;
     float: left;
     width: 25%;
     margin-left: 14%;
-    margin-top: 6%;
+    margin-bottom: 56px;
+    margin-top: 30px;
     background: #fff;
     border-radius: 9px;
   }
@@ -424,7 +443,8 @@ a {
     float: left;
     width: 31%;
     margin-left: 1.5%;
-    margin-top: 6%;
+    margin-bottom: 56px;
+    margin-top: 30px;
     background: #fff;
     border-radius: 9px;
   }
@@ -532,7 +552,8 @@ a {
     float: left;
     width: 14%;
     margin-left: 10.5%;
-    margin-top: 6%;
+    margin-bottom: 56px;
+    margin-top: 30px;
     background: #fff;
     border-radius: 9px;
   }
@@ -640,7 +661,8 @@ a {
     float: left;
     width: 10.5%;
     margin-left: 1.5%;
-    margin-top: 6%;
+    margin-bottom: 56px;
+    margin-top: 30px;
     background: #fff;
     border-radius: 9px;
   }
@@ -743,7 +765,8 @@ a {
     font-weight: 600;
   }
 }
-.pyro > .before, .pyro > .after {
+.pyro > .before,
+.pyro > .after {
   position: absolute;
   width: 5px;
   height: 5px;
