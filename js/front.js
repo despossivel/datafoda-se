@@ -32,19 +32,47 @@ $(document).on('click', '.btnBranco', function () {
 });
 
 
+const checkUseAgent = () => {
+  if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
+    return 'Android'
+  } else if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) {
+    return 'iOS'
+  } else {
+    return 'Other'
+  }
+}
+
 
 const requestVoto = (id) => M.toast({
   html: 'O Voto é secreto e ninguém irá saber sua identidade! :)', classes: 'rounded', outDuration: 400, inDuration: 400, completeCallback: function () {
-    $.ajax(`./api/votar.php?candidato=${id}`)
-      .done(function (json) {
-        let mensage = json.mensage;
-        if (mensage) {
-          $('.modal').css('background-color', '#8bc34a').css('color', '#fff')
-          $('.displayFlex').html("<i class='material-icons'>check</i> <span>Voto efetuado com sucesso!</span>")
-          playSong('comfirmacao');
-          setTimeout(() => location.reload(), 2500)
-        }
-      })
+    const voted = localStorage.getItem('voted')
+    
+
+    if (!voted) {
+
+      $.ajax(`./api/votar.php?candidato=${id}`)
+        .done(function (json) {
+          let mensage = json.mensage;
+          if (mensage) {
+            $('.modal').css('background-color', '#8bc34a').css('color', '#fff')
+            $('.displayFlex').html("<i class='material-icons'>check</i> <span>Voto efetuado com sucesso!</span>")
+
+            if (checkUseAgent() === 'Android' || checkUseAgent() === 'iOS') {
+              localStorage.setItem('voted', true)
+            }
+
+            playSong('comfirmacao');
+            setTimeout(() => location.reload(), 2500)
+          }
+        })
+
+    } else {
+      $('.modal').css('background-color', '#F44336').css('color', '#fff')
+      $('.displayFlex').html("<i class='material-icons'>close</i> <span>Você já votou antes!</span>")
+      $('.modal-footer').html("")
+    }
+
+
   }
 });
 
