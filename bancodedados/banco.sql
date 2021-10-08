@@ -24,6 +24,10 @@ INSERT INTO `datafodase`.`candidatos` (`id`, `nome`, `numero`, `partido`, `foto`
 INSERT INTO `datafodase`.`candidatos` (`id`, `nome`, `numero`, `partido`, `foto`) VALUES ('9', 'João Amoêdo', '30', 'NOVO', 'https://abrilveja.files.wordpress.com/2018/08/joao-amoedo-partido-novo-1162.jpg?quality=70&strip=info');
 INSERT INTO `datafodase`.`candidatos` (`id`, `nome`, `numero`, `partido`, `foto`) VALUES ('10', 'Guilherme Boulos', '50', 'PSOL', 'https://abrilveja.files.wordpress.com/2018/08/brasil-eleicoes-debate-band-20180809-0020-copy.jpg?quality=70&strip=info');
 
+CREATE TABLE IF NOT EXISTS `dataFodase`.`votos` (
+  `idCandidato` int(11) NOT NULL,
+  `votos` int(11) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 ALTER TABLE `votos` 
 ADD COLUMN `id` INT(11) NULL AUTO_INCREMENT AFTER `ip`,
@@ -33,9 +37,6 @@ ALTER TABLE `votos`
 ADD COLUMN `ip` VARCHAR(255) NULL AFTER `votos`;
 
 
-CREATE TABLE IF NOT EXISTS `dataFodase`.`votos` (
-  `idCandidato` int(11) NOT NULL,
-  `votos` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
 
 
