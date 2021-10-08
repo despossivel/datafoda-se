@@ -1,4 +1,6 @@
-version: '2'
+version: '3.3'
+volumes:
+  data:
 services:
   nginx:
     build: ./docker/nginx
@@ -16,3 +18,25 @@ services:
     volumes:
       - .:/opt/work
     container_name: php_Datafodase
+  mysqlsrv:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "MySql2019!"
+      MYSQL_DATABASE: "testedb"
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./bancodedados/Volumes/MySql:/var/lib/mysql
+    networks:
+      - mysql-compose-network
+
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+    networks:
+      - mysql-compose-network
+
+networks: 
+  mysql-compose-network:
+    driver: bridge

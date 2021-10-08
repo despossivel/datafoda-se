@@ -3,10 +3,10 @@
 header('content-type: application/json; charset=utf-8');
 
 $mysqli = new \mysqli(
-  'localhost',
+  '192.168.0.102',
   'root',
-  'root123.',
-  'dataFodase',
+  'MySql2019!',
+  'testedb',
   '3306'
 );
 
