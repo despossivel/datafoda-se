@@ -3,7 +3,7 @@
 header('content-type: application/json; charset=utf-8');
 
 $mysqli = new \mysqli(
-  '216.238.68.14',
+  'mysqlsrv',
   'root',
   'MySql2019!',
   'testedb',
