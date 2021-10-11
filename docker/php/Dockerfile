@@ -55,6 +55,6 @@ RUN docker-php-ext-install dba
 
 RUN sed -i -e 's/listen.*/listen = 0.0.0.0:9000/' /usr/local/etc/php-fpm.conf
 
-RUN echo "expose_php=0" > /usr/local/etc/php/php.ini
+# RUN echo "expose_php=0" > /usr/local/etc/php/php.ini
 
 CMD ["php-fpm"]
