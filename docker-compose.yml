@@ -13,11 +13,15 @@ services:
     links:
       - php
     container_name: nginx_Datafodase
+    networks:
+      - mysql-compose-network
   php:
     build: ./docker/php
     volumes:
       - .:/opt/work
     container_name: php_Datafodase
+    networks:
+      - mysql-compose-network
   mysqlsrv:
     image: mysql:5.7
     environment:
