@@ -51,8 +51,6 @@ RUN docker-php-ext-install calendar
 RUN docker-php-ext-install dba
 
 
-
-
 #################################################################################################
 
 RUN sed -i -e 's/listen.*/listen = 0.0.0.0:9000/' /usr/local/etc/php-fpm.conf
