@@ -23,6 +23,10 @@ services:
     container_name: php_Datafodase
     networks:
       - mysql-compose-network
+    depends_on:
+      - mysqlsrv
+    links:
+      - mysqlsrv
   mysqlsrv:
     image: mysql:5.7
     environment:

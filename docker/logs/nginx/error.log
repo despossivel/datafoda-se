@@ -7,3 +7,22 @@
 2021/10/11 19:49:30 [notice] 1#1: start worker process 32
 2021/10/11 19:49:30 [notice] 1#1: start worker process 33
 2021/10/11 19:49:35 [error] 33#33: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.27.0.1, server: localhost, request: "GET /imgs/candidatos/ HTTP/1.1", upstream: "fastcgi://172.27.0.4:9000", host: "192.168.0.102", referrer: "http://192.168.0.102/index.html"
+2021/10/11 20:05:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2021/10/11 20:05:22 [notice] 32#32: gracefully shutting down
+2021/10/11 20:05:22 [notice] 32#32: exiting
+2021/10/11 20:05:22 [notice] 33#33: gracefully shutting down
+2021/10/11 20:05:22 [notice] 33#33: exiting
+2021/10/11 20:05:22 [notice] 32#32: exit
+2021/10/11 20:05:22 [notice] 33#33: exit
+2021/10/11 20:05:22 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2021/10/11 20:05:22 [notice] 1#1: worker process 32 exited with code 0
+2021/10/11 20:05:22 [notice] 1#1: worker process 33 exited with code 0
+2021/10/11 20:05:22 [notice] 1#1: exit
+2021/10/11 20:05:25 [notice] 1#1: using the "epoll" event method
+2021/10/11 20:05:25 [notice] 1#1: nginx/1.21.3
+2021/10/11 20:05:25 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2021/10/11 20:05:25 [notice] 1#1: OS: Linux 5.10.47-linuxkit
+2021/10/11 20:05:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2021/10/11 20:05:25 [notice] 1#1: start worker processes
+2021/10/11 20:05:25 [notice] 1#1: start worker process 31
+2021/10/11 20:05:25 [notice] 1#1: start worker process 32
