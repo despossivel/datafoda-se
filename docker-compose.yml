@@ -10,6 +10,7 @@ services:
       - php
     volumes:
       - .:/opt/work
+      - ./docker/logs/nginx:/var/log/nginx
     links:
       - php
     container_name: nginx_Datafodase
