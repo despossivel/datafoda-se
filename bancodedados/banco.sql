@@ -13,6 +13,12 @@ CREATE TABLE IF NOT EXISTS `candidatos` (
   `foto` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+ALTER TABLE `candidatos` 
+ADD COLUMN `sexo` VARCHAR(255) NULL AFTER `foto`,
+ADD COLUMN `phoneNumber` VARCHAR(255) NULL AFTER `sexo`,
+ADD COLUMN `phoneNumberConjugue` VARCHAR(255) NULL AFTER `sexo`,
+ADD COLUMN `status` Boolean NULL AFTER `phoneNumber`;
  
 INSERT INTO `datafodase`.`candidatos` (`id`, `nome`, `numero`, `partido`, `foto`) VALUES ('2', 'Jair Bolsonaro', '17', 'PSL', 'https://abrilveja.files.wordpress.com/2018/08/jair-bolsonaro1.jpg?quality=70&strip=info');
 INSERT INTO `datafodase`.`candidatos` (`id`, `nome`, `numero`, `partido`, `foto`) VALUES ('3', 'Marina Silva', '18', 'REDE', 'https://abrilveja.files.wordpress.com/2018/07/brasil-eleicoes-marina-silva-006.jpg?quality=70&strip=info');
@@ -33,10 +39,17 @@ ALTER TABLE `votos`
 ADD COLUMN `id` INT(11) NULL AUTO_INCREMENT AFTER `ip`,
 ADD UNIQUE INDEX `id_UNIQUE` (`id` ASC);
 
+
+
+
 ALTER TABLE `votos` 
 ADD COLUMN `ip` VARCHAR(255) NULL AFTER `votos`;
 
 
+ALTER TABLE `votos` 
+ADD COLUMN `categoria` VARCHAR(255) AFTER `ip`,
+ADD COLUMN `macAddress` VARCHAR(255) AFTER `categoria`,
+ADD COLUMN `phoneNumber` VARCHAR(255) AFTER `macAddress`;
 
 
 
