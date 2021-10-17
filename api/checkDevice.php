@@ -8,10 +8,13 @@ $phoneNumber = $_GET['phoneNumber'];
 $votos = $mysqli->query("SELECT * FROM votos ");
 $totalVotos = $votos->num_rows;
 
+
+// votos.macAddress = '".$macAddress."' AND 
+
 $votos = $mysqli->query("SELECT count(votos.votos) AS numeroDeVotos, candidatos.* 
 							FROM votos 
 							RIGHT JOIN candidatos ON votos.idCandidato = candidatos.id 
-							WHERE votos.macAddress = '".$macAddress."' AND votos.phoneNumber = '".trim($phoneNumber)."'  GROUP BY candidatos.id 
+							WHERE votos.phoneNumber = '".trim($phoneNumber)."'  GROUP BY candidatos.id 
 							ORDER BY candidatos.nome DESC");
 
 
