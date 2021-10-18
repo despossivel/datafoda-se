@@ -27,6 +27,16 @@ services:
       - mysqlsrv
     links:
       - mysqlsrv
+  io:
+    image: despossivel/io-hallowins
+    ports:
+      - "5005:5005"
+    networks:
+      - mysql-compose-network
+    depends_on:
+      - mysqlsrv
+    links:
+      - mysqlsrv
   mysqlsrv:
     image: mysql:5.7
     environment:
@@ -38,18 +48,7 @@ services:
       - ./bancodedados/Volumes/MySql:/var/lib/mysql
     networks:
       - mysql-compose-network
-  io:
-    build: ../io.datafodase
-    command: node index.js
-    volumes:
-      - .:/usr/app/
-      - /usr/app/node_modules
-    ports:
-      - "5005:5005"
-    container_name: io
-    restart: always
-    networks:
-      - mysql-compose-network
+
   adminer:
     image: adminer
     ports:
