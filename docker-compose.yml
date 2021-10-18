@@ -38,7 +38,18 @@ services:
       - ./bancodedados/Volumes/MySql:/var/lib/mysql
     networks:
       - mysql-compose-network
-
+  io:
+    build: ../io.datafodase
+    command: node index.js
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - "5005:5005"
+    container_name: io
+    restart: always
+    networks:
+      - mysql-compose-network
   adminer:
     image: adminer
     ports:
