@@ -1,4 +1,9 @@
 
+CREATE TABLE IF NOT EXISTS `countDown` (
+  `dateTime` dateTime
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+
 CREATE TABLE IF NOT EXISTS `ip` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userip` varchar(100) NOT NULL,
