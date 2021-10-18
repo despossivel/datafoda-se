@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass":"sass sass/style.scss:css/style.css --watch"
+    "sass":"sass sass/style.scss:css/style.css --watch",
+    "hostConnect": "ssh root@216.238.68.14"
   },
   "author": "",
   "license": "ISC"
