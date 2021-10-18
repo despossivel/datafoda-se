@@ -1,8 +1,9 @@
 
 CREATE TABLE IF NOT EXISTS `countDown` (
-  `dateTime` dateTime
+  `dateTime` VARCHAR(255)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 
+INSERT INTO `datafodase`.`countDown` (`dateTime`) VALUES ('06/11/2021 22:03:03');
 
 CREATE TABLE IF NOT EXISTS `ip` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
