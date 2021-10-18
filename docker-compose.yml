@@ -27,16 +27,16 @@ services:
       - mysqlsrv
     links:
       - mysqlsrv
-  io:
-    image: despossivel/io-hallowins
-    ports:
-      - "5005:5005"
-    networks:
-      - mysql-compose-network
-    depends_on:
-      - mysqlsrv
-    links:
-      - mysqlsrv
+  # io:
+  #   image: despossivel/io-hallowins
+  #   ports:
+  #     - "5005:5005"
+  #   networks:
+  #     - mysql-compose-network
+  #   depends_on:
+  #     - mysqlsrv
+  #   links:
+  #     - mysqlsrv
   mysqlsrv:
     image: mysql:5.7
     environment:
