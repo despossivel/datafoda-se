@@ -100,3 +100,4 @@
 2021/10/18 20:59:18 [notice] 1#1: start worker processes
 2021/10/18 20:59:18 [notice] 1#1: start worker process 31
 2021/10/18 20:59:18 [notice] 1#1: start worker process 32
+2021/10/21 22:17:48 [notice] 32#32: signal 15 (SIGTERM) received, exiting
