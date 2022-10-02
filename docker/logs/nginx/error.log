@@ -101,3 +101,14 @@
 2021/10/18 20:59:18 [notice] 1#1: start worker process 31
 2021/10/18 20:59:18 [notice] 1#1: start worker process 32
 2021/10/21 22:17:48 [notice] 32#32: signal 15 (SIGTERM) received, exiting
+2022/10/02 16:07:51 [notice] 1#1: using the "epoll" event method
+2022/10/02 16:07:51 [notice] 1#1: nginx/1.23.1
+2022/10/02 16:07:51 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/10/02 16:07:51 [notice] 1#1: OS: Linux 5.10.124-linuxkit
+2022/10/02 16:07:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/10/02 16:07:51 [notice] 1#1: start worker processes
+2022/10/02 16:07:51 [notice] 1#1: start worker process 29
+2022/10/02 16:07:51 [notice] 1#1: start worker process 30
+2022/10/02 16:08:12 [error] 29#29: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost"
+2022/10/02 16:09:59 [error] 30#30: *4 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost"
+2022/10/02 16:27:58 [error] 29#29: *30 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"

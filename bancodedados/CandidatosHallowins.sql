@@ -1,12 +1,9 @@
--- SET SQL_SAFE_UPDATES = 0;
-
-
 INSERT INTO `candidatos`
 (`nome`, `numero`, `partido`, `foto`) 
 VALUES
 ('Adriele', '1', '', 'Adriele.jpg'),
-('Alessandra', '2', '', 'Alessandra.jpg'),
-('Alexandre', '3', '', 'Alexandre.jpg'),
+-- ('Alessandra', '2', '', 'Alessandra.jpg'),
+-- ('Alexandre', '3', '', 'Alexandre.jpg'),
 ('Aline', '4', '', 'Aline.jpg'),
 ('Amanda', '5', '', 'Amanda.jpg'),
 ('Danielle', '6', '', 'Danielle.jpg'),
@@ -15,7 +12,7 @@ VALUES
 ('Gabriel', '9', '', 'Gabriel.jpg'),
 ('Jalles', '10', '', 'Jalles.jpg'),
 ('Johne', '11', '', 'Johne.jpg'),
-('Hemilyn', '12', '', 'Hemilyn.jpg'),
+-- ('Hemilyn', '12', '', 'Hemilyn.jpg'),
 ('Kallil', '13', '', 'Kallil.jpg'),
 ('Lana', '14', '', 'Lana.jpg'),
 ('Lindiberg', '15', '', 'Lindiberg.jpg'),
@@ -24,18 +21,11 @@ VALUES
 ('Maracaipe', '18', '', 'Maracaipe.jpg'),
 ('Mario', '19', '', 'Mario.jpg'),
 ('Maria', '20', '', 'Maria.jpg'),
-('Maik', '21', '', 'Maik.png'),
-('Pedro', '22', '', 'Pedro.jpg'),
+-- ('Maik', '21', '', 'Maik.png'),
+-- ('Pedro', '22', '', 'Pedro.jpg'),
 ('PH', '23', '', 'PH.jpg'),
 ('Piá', '24', '', 'Pia.jpg'),
 ('Romário', '25', '', 'Romario.jpg'),
 ('Roney', '26', '', 'Roney.jpg'),
 ('Ruth', '27', '', 'Ruth.jpg'),
-('Thalysson', '28', '', 'Thalysson.jpg'),
-('Vanda', '29', '', 'Vanda.jpg');
--- ('Elismar', '6', '', 'Elismar.jpg'),
--- ('Maclaudio', '14', '', 'Maclaudio.jpg'),
--- ('Suellen', '21', '', 'Suellen.jpg'),
--- ('Andressa', '23', '', 'Andressa.jpg'),
--- ('Brendha', '24', '', 'Brendha.jpg'),
--- ('Nicolas', '27', '', 'Nicolas.jpg'),
+('Thalysson', '28', '', 'Thalysson.jpg');
