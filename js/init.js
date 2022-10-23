@@ -25,9 +25,7 @@ const init = () => {
                               <div class='nome'>
                                 ${nome}
                               </div>
-                              <div class='numero_partido'>
-                               
-                              </div>
+ 
                             </div>
                             </a>`);
 
@@ -46,6 +44,7 @@ const initResultado = () => {
 
       DADOS = dados;
       TOTAL = totalVotos;
+      
  
       $('.title').html(`${totalVotos} deixaram sua intenção de voto.`);
       $('#wrap').empty();
@@ -70,9 +69,7 @@ const initResultado = () => {
                                 <div class='nome'>
                                   ${nome}
                                 </div>
-                                <div class='numero_partido'>
-                                 
-                                </div>
+ 
                               </div>
                           </div>`);
 

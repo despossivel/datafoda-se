@@ -8,8 +8,9 @@ $totalVotos = $votos->num_rows;
 $votos = $mysqli->query("SELECT count(votos.votos) AS numeroDeVotos, candidatos.* 
 							FROM votos 
 							RIGHT JOIN candidatos ON votos.idCandidato = candidatos.id 
+							WHERE candidatos.status = 1
 							GROUP BY candidatos.id 
-							ORDER BY candidatos.nome DESC");
+							ORDER BY candidatos.nome DESC ");
 
 $dados = array();
 while ($ret = $votos->fetch_array()) {

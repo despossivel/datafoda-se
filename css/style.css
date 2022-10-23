@@ -1,11 +1,21 @@
 body {
   font-family: sans-serif;
-  background: #f5f5f5;
+  background: rgba(0, 0, 0, 0.87);
+  color: #f2f2f2;
+}
+
+.titleModal {
+  float: left;
+  z-index: 9999;
   color: #333;
+  position: absolute;
+  background: #f2f2f2b0;
+  width: 100%;
+  padding: 7px;
 }
 
 a {
-  color: #0d0950 !important;
+  color: rgba(0, 0, 0, 0.87) !important;
 }
 
 .footer {
@@ -14,7 +24,7 @@ a {
   padding: 20px;
 }
 .footer i {
-  color: #0d0950 !important;
+  color: rgba(0, 0, 0, 0.87) !important;
   transform: rotate(30deg);
 }
 
@@ -41,7 +51,7 @@ a {
 .loaderMin {
   border: 8px solid #dce1eb;
   /* Light grey */
-  border-top: 8px solid #0d0950;
+  border-top: 8px solid rgba(0, 0, 0, 0.87);
   /* Blue */
   border-radius: 50%;
   width: 50px;
@@ -66,6 +76,7 @@ a {
 }
 
 .btnConfirmar {
+  font-size: 12px !important;
   background: #83e80e;
   font-weight: 900;
   border-radius: 8px;
@@ -77,6 +88,7 @@ a {
 }
 
 .btnCorrigir {
+  font-size: 12px !important;
   background: #ffc107;
   font-weight: 900;
   border-radius: 8px;
@@ -88,7 +100,8 @@ a {
 }
 
 .btnResultado {
-  background: #fff;
+  font-size: 12px !important;
+  background: #f2f2f2;
   font-weight: 900;
   border-radius: 8px;
 }
@@ -99,7 +112,8 @@ a {
 }
 
 .btnBranco {
-  background: #fff;
+  font-size: 12px !important;
+  background: #f2f2f2;
   font-weight: 900;
   border-radius: 8px;
 }
@@ -112,7 +126,7 @@ a {
 .loader {
   margin-top: 22%;
   border: 8px solid #dce1eb;
-  border-top: 8px solid #0d0950;
+  border-top: 8px solid rgba(0, 0, 0, 0.87);
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -130,7 +144,7 @@ a {
 .boxMsg {
   position: absolute;
   right: 40px;
-  background: #fff;
+  background: #f2f2f2;
   padding: 25px;
   top: 39px;
   border-radius: 22px;
@@ -142,25 +156,28 @@ a {
 }
 
 .boxCandidato {
-  background: #fff;
+  background: #f2f2f2;
   border-radius: 9px;
 }
 .boxCandidato :hover {
-  background: #0d0950;
-  color: #fff;
+  background: rgba(0, 0, 0, 0.87);
+  color: #f2f2f2;
   border-radius: 9px;
 }
 
 .boxCandidatoBig {
-  background: #fff;
+  background: #f2f2f2;
   border-radius: 9px;
 }
 .boxCandidatoBig :hover {
-  background: #0d0950;
-  color: #fff;
+  background: rgba(0, 0, 0, 0.87);
+  color: #f2f2f2;
   border-radius: 9px;
 }
 
+.btn-flat {
+  font-size: 12px;
+}
 .btn-flat i {
   margin-left: 5px;
 }
@@ -169,8 +186,8 @@ a {
   padding: 11px;
   font-size: 17px;
   font-weight: 600;
-  background: #0d0950;
-  color: #fff;
+  background: rgba(0, 0, 0, 0.87);
+  color: #f2f2f2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,18 +197,33 @@ a {
   margin-top: -31px;
 }
 .foto img {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
+  width: 122px;
+  height: 122px;
+  border-radius: 13px 13px 0px 0px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo b {
+  font-size: 27px;
+}
+.logo small {
+  font-size: 11px;
 }
 
 .nome {
   font-size: 14px;
   font-weight: 600;
   padding: 11px 11px 0px 11px;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .numero_partido {
+  color: rgba(0, 0, 0, 0.87);
   padding: 5px;
   font-size: 12px;
 }
@@ -208,33 +240,33 @@ a {
 @media (min-width: 1px) and (max-width: 329px) {
   .boxCandidato {
     float: left;
-    width: 25%;
+    width: 122px;
     margin-left: 14%;
     margin-bottom: 56px;
     margin-top: 30px;
-    background: #fff;
+    background: #f2f2f2;
     border-radius: 9px;
   }
   .boxCandidato a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidato :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBigPodioSub {
     width: 100%;
     margin-top: 43%;
-    background: #fff;
-    border-radius: 9px;
+    background: #f2f2f2;
+    border-radius: 15px;
     min-width: 87%;
   }
   .boxCandidatoBigPodioSub .headBox .foto img {
-    width: 100px;
-    height: 100px;
+    width: 137px;
+    height: 137px;
   }
   .boxCandidatoBigPodioSub .headBox .nome {
     font-size: 25px;
@@ -245,19 +277,19 @@ a {
   }
   .boxCandidatoBigPodioSub a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBigPodioSub :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBigPodio {
     width: 100%;
     margin-top: 6%;
-    background: #fff;
-    border-radius: 9px;
+    background: #f2f2f2;
+    border-radius: 15px;
     min-width: 100%;
   }
   .boxCandidatoBigPodio .headBox .foto img {
@@ -273,18 +305,18 @@ a {
   }
   .boxCandidatoBigPodio a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBigPodio :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBig {
     width: 50%;
     margin-top: 6%;
-    background: #fff;
+    background: #f2f2f2;
     border-radius: 9px;
   }
   .boxCandidatoBig .headBox .foto img {
@@ -296,12 +328,12 @@ a {
   }
   .boxCandidatoBig a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBig :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxVotos {
@@ -332,33 +364,33 @@ a {
     margin-bottom: 30px !important;
     margin-top: 56px !important;
     float: left;
-    width: 25%;
+    width: 122px;
     margin-left: 14%;
     margin-bottom: 56px;
     margin-top: 30px;
-    background: #fff;
+    background: #f2f2f2;
     border-radius: 9px;
   }
   .boxCandidato a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidato :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBigPodioSub {
     width: 100%;
     margin-top: 43%;
-    background: #fff;
-    border-radius: 9px;
+    background: #f2f2f2;
+    border-radius: 15px;
     min-width: 87%;
   }
   .boxCandidatoBigPodioSub .headBox .foto img {
-    width: 100px;
-    height: 100px;
+    width: 137px;
+    height: 137px;
   }
   .boxCandidatoBigPodioSub .headBox .nome {
     font-size: 25px;
@@ -369,19 +401,19 @@ a {
   }
   .boxCandidatoBigPodioSub a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBigPodioSub :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBigPodio {
     width: 100%;
     margin-top: 6%;
-    background: #fff;
-    border-radius: 9px;
+    background: #f2f2f2;
+    border-radius: 15px;
     min-width: 100%;
   }
   .boxCandidatoBigPodio .headBox .foto img {
@@ -397,18 +429,18 @@ a {
   }
   .boxCandidatoBigPodio a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBigPodio :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBig {
     width: 50%;
     margin-top: 6%;
-    background: #fff;
+    background: #f2f2f2;
     border-radius: 9px;
   }
   .boxCandidatoBig .headBox .foto img {
@@ -420,12 +452,12 @@ a {
   }
   .boxCandidatoBig a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBig :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxVotos {
@@ -441,33 +473,33 @@ a {
 @media (min-width: 480px) and (max-width: 692px) {
   .boxCandidato {
     float: left;
-    width: 31%;
+    width: 122px;
     margin-left: 1.5%;
     margin-bottom: 56px;
     margin-top: 30px;
-    background: #fff;
+    background: #f2f2f2;
     border-radius: 9px;
   }
   .boxCandidato a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidato :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBigPodioSub {
     width: 100%;
     margin-top: 43%;
-    background: #fff;
-    border-radius: 9px;
+    background: #f2f2f2;
+    border-radius: 15px;
     min-width: 87%;
   }
   .boxCandidatoBigPodioSub .headBox .foto img {
-    width: 100px;
-    height: 100px;
+    width: 137px;
+    height: 137px;
   }
   .boxCandidatoBigPodioSub .headBox .nome {
     font-size: 25px;
@@ -478,19 +510,19 @@ a {
   }
   .boxCandidatoBigPodioSub a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBigPodioSub :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBigPodio {
     width: 100%;
     margin-top: 6%;
-    background: #fff;
-    border-radius: 9px;
+    background: #f2f2f2;
+    border-radius: 15px;
     min-width: 100%;
   }
   .boxCandidatoBigPodio .headBox .foto img {
@@ -506,18 +538,18 @@ a {
   }
   .boxCandidatoBigPodio a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBigPodio :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBig {
     width: 50%;
     margin-top: 6%;
-    background: #fff;
+    background: #f2f2f2;
     border-radius: 9px;
   }
   .boxCandidatoBig .headBox .foto img {
@@ -529,12 +561,12 @@ a {
   }
   .boxCandidatoBig a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBig :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxVotos {
@@ -554,29 +586,29 @@ a {
     margin-left: 10.5%;
     margin-bottom: 56px;
     margin-top: 30px;
-    background: #fff;
+    background: #f2f2f2;
     border-radius: 9px;
   }
   .boxCandidato a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidato :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBigPodioSub {
     width: 100%;
     margin-top: 43%;
-    background: #fff;
-    border-radius: 9px;
+    background: #f2f2f2;
+    border-radius: 15px;
     min-width: 87%;
   }
   .boxCandidatoBigPodioSub .headBox .foto img {
-    width: 100px;
-    height: 100px;
+    width: 137px;
+    height: 137px;
   }
   .boxCandidatoBigPodioSub .headBox .nome {
     font-size: 25px;
@@ -587,19 +619,19 @@ a {
   }
   .boxCandidatoBigPodioSub a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBigPodioSub :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBigPodio {
     width: 100%;
     margin-top: 6%;
-    background: #fff;
-    border-radius: 9px;
+    background: #f2f2f2;
+    border-radius: 15px;
     min-width: 100%;
   }
   .boxCandidatoBigPodio .headBox .foto img {
@@ -615,18 +647,18 @@ a {
   }
   .boxCandidatoBigPodio a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBigPodio :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBig {
     width: 50%;
     margin-top: 6%;
-    background: #fff;
+    background: #f2f2f2;
     border-radius: 9px;
   }
   .boxCandidatoBig .headBox .foto img {
@@ -638,12 +670,12 @@ a {
   }
   .boxCandidatoBig a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBig :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxVotos {
@@ -663,29 +695,29 @@ a {
     margin-left: 1.5%;
     margin-bottom: 56px;
     margin-top: 30px;
-    background: #fff;
+    background: #f2f2f2;
     border-radius: 9px;
   }
   .boxCandidato a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidato :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBigPodioSub {
     width: 100%;
     margin-top: 43%;
-    background: #fff;
-    border-radius: 9px;
+    background: #f2f2f2;
+    border-radius: 15px;
     min-width: 87%;
   }
   .boxCandidatoBigPodioSub .headBox .foto img {
-    width: 100px;
-    height: 100px;
+    width: 137px;
+    height: 137px;
   }
   .boxCandidatoBigPodioSub .headBox .nome {
     font-size: 25px;
@@ -696,19 +728,19 @@ a {
   }
   .boxCandidatoBigPodioSub a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBigPodioSub :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBigPodio {
     width: 100%;
     margin-top: 6%;
-    background: #fff;
-    border-radius: 9px;
+    background: #f2f2f2;
+    border-radius: 15px;
     min-width: 100%;
   }
   .boxCandidatoBigPodio .headBox .foto img {
@@ -724,18 +756,18 @@ a {
   }
   .boxCandidatoBigPodio a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBigPodio :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxCandidatoBig {
     width: 50%;
     margin-top: 6%;
-    background: #fff;
+    background: #f2f2f2;
     border-radius: 9px;
   }
   .boxCandidatoBig .headBox .foto img {
@@ -747,12 +779,12 @@ a {
   }
   .boxCandidatoBig a {
     text-decoration: none;
-    color: #333;
+    color: #f2f2f2;
   }
   .boxCandidatoBig :hover {
     border-radius: 9px;
-    background: #0d0950;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.87);
+    color: #f2f2f2;
   }
 
   .boxVotos {

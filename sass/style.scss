@@ -1,10 +1,37 @@
-$color: #0d0950;
+$color: rgb(0 0 0 / 87%);
+$colorFont: #f2f2f2;
 
 body {
   font-family: sans-serif;
-  background: #f5f5f5;
-  color: #333;
+  background: $color;
+  color: $colorFont;
 }
+
+
+// .modal{
+  
+//   .modal-fixed-footer{
+   
+//     .modal-content {
+//       padding: 0px !important;
+
+
+      .titleModal{
+        float: left;
+        z-index: 9999;
+        color: #333;
+        position: absolute;
+        background: #f2f2f2b0;
+        width: 100%;
+        padding: 7px;
+      }
+
+
+
+//     }
+//   }
+// }
+
 
 a {
   color: $color !important;
@@ -71,7 +98,10 @@ a {
   display: flex;
   justify-content: space-evenly !important;
 }
+
+
 .btnConfirmar {
+  font-size: 12px !important;
   background: #83e80e;
   font-weight: 900;
   border-radius: 8px;
@@ -84,6 +114,7 @@ a {
 }
 
 .btnCorrigir {
+  font-size: 12px !important;
   background: #ffc107;
   font-weight: 900;
   border-radius: 8px;
@@ -96,7 +127,8 @@ a {
 }
 
 .btnResultado {
-  background: #fff;
+  font-size: 12px !important;
+  background: $colorFont;
   font-weight: 900;
   border-radius: 8px;
 
@@ -108,7 +140,8 @@ a {
 }
 
 .btnBranco {
-  background: #fff;
+  font-size: 12px !important;
+  background: $colorFont;
   font-weight: 900;
   border-radius: 8px;
 
@@ -140,7 +173,7 @@ a {
 .boxMsg {
   position: absolute;
   right: 40px;
-  background: #fff;
+  background: $colorFont;
   padding: 25px;
   top: 39px;
   border-radius: 22px;
@@ -152,28 +185,29 @@ a {
 }
 
 .boxCandidato {
-  background: #fff;
+  background: $colorFont;
   border-radius: 9px;
 
   :hover {
     background: $color;
-    color: #fff;
+    color: $colorFont;
     border-radius: 9px;
   }
 }
 
 .boxCandidatoBig {
-  background: #fff;
+  background: $colorFont;
   border-radius: 9px;
 
   :hover {
     background: $color;
-    color: #fff;
+    color: $colorFont;
     border-radius: 9px;
   }
 }
 
 .btn-flat {
+  font-size: 12px;
   i {
     margin-left: 5px;
   }
@@ -184,7 +218,7 @@ a {
   font-size: 17px;
   font-weight: 600;
   background: $color;
-  color: #fff;
+  color: $colorFont;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,18 +227,36 @@ a {
 .foto {
   margin-top: -31px;
   img {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
+    width: 122px;
+    height: 122px;
+    border-radius: 13px 13px 0px 0px;
   }
 }
 
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  b{
+    font-size: 27px;
+  }
+
+  small{
+    font-size: 11px;
+  }
+
+}
 .nome {
   font-size: 14px;
   font-weight: 600;
   padding: 11px 11px 0px 11px;
+  color: $color;
 }
 .numero_partido {
+  color: $color;
   padding: 5px;
   font-size: 12px;
 }
@@ -225,33 +277,33 @@ a {
   margin-bottom: $marginTop;
   margin-top: $marginBottom;
 
-  background: #fff;
+  background: $colorFont;
   border-radius: 9px;
 
   a {
     text-decoration: none;
-    color: #333;
+    color: $colorFont;
   }
 
   :hover {
     border-radius: 9px;
     background: $color;
-    color: #fff;
+    color: $colorFont;
   }
 }
 
 @mixin boxCandidatoBigPodioSub($width: 19%, $marginLeft: 10%) {
   width: 100%;
   margin-top: 43%;
-  background: #fff;
-  border-radius: 9px;
+  background: $colorFont;
+  border-radius: 15px;
   min-width: 87%;
 
   .headBox {
     .foto {
       img {
-        width: 100px;
-        height: 100px;
+        width: 137px;
+        height: 137px;
       }
     }
     .nome {
@@ -265,21 +317,21 @@ a {
 
   a {
     text-decoration: none;
-    color: #333;
+    color: $colorFont;
   }
 
   :hover {
     border-radius: 9px;
     background: $color;
-    color: #fff;
+    color: $colorFont;
   }
 }
 
 @mixin boxCandidatoBigPodio($width: 19%, $marginLeft: 10%) {
   width: 100%;
   margin-top: 6%;
-  background: #fff;
-  border-radius: 9px;
+  background: $colorFont;
+  border-radius: 15px;
   min-width: 100%;
 
   .headBox {
@@ -301,20 +353,20 @@ a {
 
   a {
     text-decoration: none;
-    color: #333;
+    color: $colorFont;
   }
 
   :hover {
     border-radius: 9px;
     background: $color;
-    color: #fff;
+    color: $colorFont;
   }
 }
 
 @mixin boxCandidatoBig($width: 19%, $marginLeft: 10%) {
   width: 50%;
   margin-top: 6%;
-  background: #fff;
+  background: $colorFont;
   border-radius: 9px;
 
   .headBox {
@@ -331,13 +383,13 @@ a {
 
   a {
     text-decoration: none;
-    color: #333;
+    color: $colorFont;
   }
 
   :hover {
     border-radius: 9px;
     background: $color;
-    color: #fff;
+    color: $colorFont;
   }
 }
 
@@ -353,7 +405,7 @@ a {
 
 @media (min-width: 1px) and (max-width: 329px) {
   .boxCandidato {
-    @include boxCandidato(25%, 14%);
+    @include boxCandidato(122px, 14%);
   }
 
   .boxCandidatoBigPodioSub {
@@ -390,7 +442,7 @@ a {
   .boxCandidato {
     margin-bottom: 30px !important;
     margin-top: 56px !important;
-    @include boxCandidato(25%, 14%);
+    @include boxCandidato(122px, 14%);
   }
 
   .boxCandidatoBigPodioSub {
@@ -410,7 +462,7 @@ a {
 
 @media (min-width: 480px) and (max-width: 692px) {
   .boxCandidato {
-    @include boxCandidato(31%);
+    @include boxCandidato(122px);
   }
 
   .boxCandidatoBigPodioSub {

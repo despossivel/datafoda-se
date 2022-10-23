@@ -112,3 +112,89 @@
 2022/10/02 16:08:12 [error] 29#29: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost"
 2022/10/02 16:09:59 [error] 30#30: *4 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost"
 2022/10/02 16:27:58 [error] 29#29: *30 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/02 16:29:46 [error] 29#29: *37 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/02 16:30:00 [error] 29#29: *40 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/02 16:30:14 [error] 29#29: *40 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/02 16:30:21 [error] 29#29: *40 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /resultaddo.html HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost"
+2022/10/02 16:30:24 [error] 29#29: *40 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/02 16:30:39 [error] 29#29: *40 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/02 16:30:39 [error] 29#29: *40 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/02 16:30:43 [error] 29#29: *40 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/02 16:30:47 [error] 29#29: *40 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.22.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.22.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/23 11:56:56 [notice] 1#1: using the "epoll" event method
+2022/10/23 11:56:56 [notice] 1#1: nginx/1.23.2
+2022/10/23 11:56:56 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/10/23 11:56:56 [notice] 1#1: OS: Linux 5.10.124-linuxkit
+2022/10/23 11:56:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/10/23 11:56:56 [notice] 1#1: start worker processes
+2022/10/23 11:56:56 [notice] 1#1: start worker process 28
+2022/10/23 11:56:56 [notice] 1#1: start worker process 29
+2022/10/23 12:04:46 [error] 28#28: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2022/10/23 12:04:53 [error] 29#29: *6 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/alberth.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:04:54 [error] 29#29: *6 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/neto.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:04:54 [error] 29#29: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/nelma.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:04:54 [error] 28#28: *5 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:04:54 [error] 29#29: *6 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/thamirisSantos.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:05:11 [error] 29#29: *3 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/alberth.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:05:11 [error] 29#29: *3 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:05:11 [error] 28#28: *5 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/neto.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:05:11 [error] 29#29: *6 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/nelma.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:05:11 [error] 28#28: *5 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/thamirisSantos.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:08:53 [error] 29#29: *21 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/alberth.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:08:54 [error] 28#28: *24 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/neto.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:08:54 [error] 29#29: *20 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/nelma.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:08:54 [error] 28#28: *26 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/thamirisSantos.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:11:43 [error] 28#28: *31 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/alberth.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:11:43 [error] 29#29: *30 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/neto.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:11:43 [error] 29#29: *30 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/thamirisSantos.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:14:21 [error] 28#28: *40 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /imgs/candidatos/thamirisSantos.jpg HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost", referrer: "http://localhost/index.html"
+2022/10/23 12:23:30 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/10/23 12:23:30 [notice] 29#29: gracefully shutting down
+2022/10/23 12:23:30 [notice] 29#29: exiting
+2022/10/23 12:23:30 [notice] 28#28: gracefully shutting down
+2022/10/23 12:23:30 [notice] 28#28: exiting
+2022/10/23 12:23:30 [notice] 29#29: exit
+2022/10/23 12:23:30 [notice] 28#28: exit
+2022/10/23 12:23:31 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/10/23 12:23:31 [notice] 1#1: worker process 29 exited with code 0
+2022/10/23 12:23:31 [notice] 1#1: signal 29 (SIGIO) received
+2022/10/23 12:23:31 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/10/23 12:23:31 [notice] 1#1: worker process 28 exited with code 0
+2022/10/23 12:23:31 [notice] 1#1: exit
+2022/10/23 12:23:38 [notice] 1#1: using the "epoll" event method
+2022/10/23 12:23:38 [notice] 1#1: nginx/1.23.2
+2022/10/23 12:23:38 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/10/23 12:23:38 [notice] 1#1: OS: Linux 5.10.124-linuxkit
+2022/10/23 12:23:38 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/10/23 12:23:38 [notice] 1#1: start worker processes
+2022/10/23 12:23:38 [notice] 1#1: start worker process 28
+2022/10/23 12:23:38 [notice] 1#1: start worker process 29
+2022/10/23 12:25:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/10/23 12:25:34 [notice] 28#28: gracefully shutting down
+2022/10/23 12:25:34 [notice] 28#28: exiting
+2022/10/23 12:25:34 [notice] 29#29: gracefully shutting down
+2022/10/23 12:25:34 [notice] 28#28: exit
+2022/10/23 12:25:34 [notice] 29#29: exiting
+2022/10/23 12:25:34 [notice] 29#29: exit
+2022/10/23 12:25:35 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/10/23 12:25:35 [notice] 1#1: worker process 28 exited with code 0
+2022/10/23 12:25:35 [notice] 1#1: signal 29 (SIGIO) received
+2022/10/23 12:25:35 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/10/23 12:25:35 [notice] 1#1: worker process 29 exited with code 0
+2022/10/23 12:25:35 [notice] 1#1: exit
+2022/10/23 12:26:04 [notice] 1#1: using the "epoll" event method
+2022/10/23 12:26:04 [notice] 1#1: nginx/1.23.2
+2022/10/23 12:26:04 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/10/23 12:26:04 [notice] 1#1: OS: Linux 5.10.124-linuxkit
+2022/10/23 12:26:04 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/10/23 12:26:04 [notice] 1#1: start worker processes
+2022/10/23 12:26:04 [notice] 1#1: start worker process 27
+2022/10/23 12:26:04 [notice] 1#1: start worker process 28
+2022/10/23 12:57:29 [error] 27#27: *64 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/daniNolleto.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/23 12:57:29 [error] 27#27: *69 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/maysaZampiva.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/23 12:57:29 [error] 27#27: *72 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/23 12:57:29 [error] 27#27: *64 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/thamirisSantos.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/23 12:58:06 [error] 28#28: *70 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/daniNolleto.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/23 12:58:06 [error] 27#27: *64 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/Maracaipe.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/23 12:58:06 [error] 27#27: *72 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/thamirisSantos.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"
+2022/10/23 12:58:06 [error] 28#28: *62 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/maysaZampiva.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost", referrer: "http://localhost/resultado.html"

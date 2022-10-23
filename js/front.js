@@ -90,9 +90,7 @@ const roletaView = (object) => {
     <div class='nome'>
       ${object.nome}
     </div>
-    <div class='numero_partido'>
-     
-    </div>
+    
   </div>
 </div>`);
 }
