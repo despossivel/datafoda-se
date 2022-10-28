@@ -21,6 +21,16 @@ $(document).on('click', '.btnConfirmar', function () {
 });
 
 
+$(document).on('click', '.btnConfirmarNegative', function () {
+  const id = $(this).attr('id')
+
+  $('.modal-footer').hide()
+  $('.modal-content').html("<div class='displayFlex'><div class='loaderMin'></div></div>");
+
+  requestVotoNegative(id);
+
+});
+
 $(document).on('click', '.btnBranco', function () {
   const id = $(this).attr('id')
 
@@ -78,11 +88,44 @@ const requestVoto = (id) => M.toast({
 
 
 
+const requestVotoNegative = (id) => M.toast({
+  html: 'O Voto é secreto e ninguém irá saber sua identidade! :)', classes: 'rounded', outDuration: 400, inDuration: 400, completeCallback: function () {
+    const voted = localStorage.getItem('voted')
+    
+
+    if (!voted) {
+
+      $.ajax(`./api/votarNegative.php?candidato=${id}`)
+        .done(function (json) {
+          let mensage = json.mensage;
+          if (mensage) {
+            $('.modal').css('background-color', '#8bc34a').css('color', '#fff')
+            $('.displayFlex').html("<i class='material-icons'>check</i> <span>Voto efetuado com sucesso!</span>")
+
+            if (checkUseAgent() === 'Android' || checkUseAgent() === 'iOS') {
+              localStorage.setItem('voted', true)
+            }
+
+            playSong('comfirmacao');
+            setTimeout(() => location.reload(), 2500)
+          }
+        })
+
+    } else {
+      $('.modal').css('background-color', '#F44336').css('color', '#fff')
+      $('.displayFlex').html("<i class='material-icons'>close</i> <span>Você já votou antes!</span>")
+      $('.modal-footer').html("")
+    }
+
+
+  }
+});
+
 $(document).on('click', '.btnCorrigir', () => $('.modal-overlay').click())
 
 
 const roletaView = (object) => {
-  $('#wrap').html(`<div class='boxCandidatoBig z-depth-1' id='${object.id}'> 
+  $('#wrap_roulete').html(`<div class='boxCandidatoBig z-depth-1' id='${object.id}'> 
   <div class='headBox'>
     <div class='foto'>
       <img class="z-depth-1" src="../imgs/candidatos/${object.foto}" />
@@ -102,7 +145,7 @@ $('#verResultado').click(function () {
 
   let candidato = DADOS[Math.floor(Math.random() * DADOS.length)];
   roletaView(candidato);
-
+ 
 
   let interval = setInterval(function () {
     let candidato = DADOS[Math.floor(Math.random() * DADOS.length)];
@@ -131,21 +174,26 @@ const ganhador = () => {
 
   let [primeiro, segundo, terceiro] = candidatos;
 
+  console.log(primeiro.numeroDeVotos)
+  console.log(Number(primeiro.numeroDeVotos))
+  console.log(TOTAL)
+  console.log((Number(primeiro.numeroDeVotos) / Number(TOTAL)) * 100)
+  
 
-  let porcentagemPrimeiro = primeiro.numeroDeVotos / TOTAL * 100;
+  let porcentagemPrimeiro = Number(primeiro.numeroDeVotos) / TOTAL * 100;
   porcentagemPrimeiro = porcentagemPrimeiro.toFixed(2);
 
 
-  let porcentagemSegundo = segundo.numeroDeVotos / TOTAL * 100;
+  let porcentagemSegundo = Number(segundo.numeroDeVotos) / TOTAL * 100;
   porcentagemSegundo = porcentagemSegundo.toFixed(2);
 
 
-  let porcentagemTerceiro = terceiro.numeroDeVotos / TOTAL * 100;
+  let porcentagemTerceiro = Number(terceiro.numeroDeVotos) / TOTAL * 100;
   porcentagemTerceiro = porcentagemTerceiro.toFixed(2);
 
 
 
-  $('#wrap').html(`<div class='podio'>
+  $('#wrap_roulete').html(`<div class='podio'>
 
     <div class="segundo">
       <div class='boxCandidatoBigPodioSub z-depth-1' id='${segundo.id}'> 
@@ -174,8 +222,8 @@ const ganhador = () => {
           ${primeiro.nome}
         </div>
         <div class='numero_partido'>
-        ${primeiro.numeroDeVotos} Votos <br>
-        ${porcentagemPrimeiro}%
+          ${primeiro.numeroDeVotos} Votos <br>
+          ${porcentagemPrimeiro}%
         </div>
       </div>
     </div>
@@ -203,8 +251,9 @@ const ganhador = () => {
 
 
   playSong('pyro');
+  $('.numero_partido').show();
 
-  $('#wrap').append(`<div class="pyro">
+  $('#wrap_roulete').append(`<div class="pyro">
 <div class="before"></div>
 <div class="after"></div>
 </div>`)

@@ -8,6 +8,18 @@ body {
 }
 
 
+.aling-flex{
+
+  h3{
+    font-size: 21px;
+    margin: 0;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 // .modal{
   
 //   .modal-fixed-footer{
@@ -249,6 +261,7 @@ a {
   }
 
 }
+
 .nome {
   font-size: 14px;
   font-weight: 600;
@@ -256,6 +269,7 @@ a {
   color: $color;
 }
 .numero_partido {
+  display: none;
   color: $color;
   padding: 5px;
   font-size: 12px;
@@ -265,9 +279,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 78%;
+  /* position: absolute; */
+  width: 318px;
+  height: 306px;
+  margin-top: 85px;
+  margin-bottom: 109px;
 }
 
 @mixin boxCandidato($width: 10.5%, $marginLeft: 1.5%, $marginTop: 56px, $marginBottom: 30px) {
@@ -364,7 +380,7 @@ a {
 }
 
 @mixin boxCandidatoBig($width: 19%, $marginLeft: 10%) {
-  width: 50%;
+  width: 57%;
   margin-top: 6%;
   background: $colorFont;
   border-radius: 9px;

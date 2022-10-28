@@ -14,6 +14,8 @@ $votos = $mysqli->query("SELECT count(votos.votos) AS numeroDeVotos, candidatos.
 
 $dados = array();
 while ($ret = $votos->fetch_array()) {
+ 
+
 	array_push($dados, $ret);
 }
 

@@ -4,6 +4,16 @@ body {
   color: #f2f2f2;
 }
 
+.aling-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aling-flex h3 {
+  font-size: 21px;
+  margin: 0;
+}
+
 .titleModal {
   float: left;
   z-index: 9999;
@@ -223,6 +233,7 @@ a {
 }
 
 .numero_partido {
+  display: none;
   color: rgba(0, 0, 0, 0.87);
   padding: 5px;
   font-size: 12px;
@@ -232,9 +243,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 78%;
+  /* position: absolute; */
+  width: 318px;
+  height: 306px;
+  margin-top: 85px;
+  margin-bottom: 109px;
 }
 
 @media (min-width: 1px) and (max-width: 329px) {
@@ -314,7 +327,7 @@ a {
   }
 
   .boxCandidatoBig {
-    width: 50%;
+    width: 57%;
     margin-top: 6%;
     background: #f2f2f2;
     border-radius: 9px;
@@ -438,7 +451,7 @@ a {
   }
 
   .boxCandidatoBig {
-    width: 50%;
+    width: 57%;
     margin-top: 6%;
     background: #f2f2f2;
     border-radius: 9px;
@@ -547,7 +560,7 @@ a {
   }
 
   .boxCandidatoBig {
-    width: 50%;
+    width: 57%;
     margin-top: 6%;
     background: #f2f2f2;
     border-radius: 9px;
@@ -656,7 +669,7 @@ a {
   }
 
   .boxCandidatoBig {
-    width: 50%;
+    width: 57%;
     margin-top: 6%;
     background: #f2f2f2;
     border-radius: 9px;
@@ -765,7 +778,7 @@ a {
   }
 
   .boxCandidatoBig {
-    width: 50%;
+    width: 57%;
     margin-top: 6%;
     background: #f2f2f2;
     border-radius: 9px;

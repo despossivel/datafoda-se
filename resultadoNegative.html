@@ -1,0 +1,58 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Fodase</title>
+    <meta name="description" content="Pesquisa de intenção de voto não manipulada.">
+    <meta property="og:title" content="Data Fodase">
+    <meta property="og:image" content="https://image.ibb.co/eWHyS9/download.jpg">
+    <meta property="og:description" content="Pesquisa de intenção de voto não manipulada.">
+    <meta property="og:url" content="http://datafodase.com.br">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<audio controls="controls" style="display: none;"></audio>
+
+<body>
+    <div class="boxHead z-depth-1">
+        <div class="aling-flex">
+            <h3><b>Categoria Pior Fantasia</b></h3>
+            <div class="title"></div>
+        </div>
+
+        <div>
+            <a href="#!" id="verResultado" class="btn-flat z-depth-1 btnResultado">
+                VER RESULTADO <i class="material-icons">sentiment_neutral</i>
+            </a>
+        </div>
+    </div>
+    <div align="center">
+        <div id="wrap_roulete" align="center">
+   
+        </div>
+        
+        <div id="wrap" align="center">
+            <div class="loader"></div>
+        </div>
+    </div>
+    <div class="boxVotos"></div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125810330-1"></script>
+    <script type="text/javascript" src="./js/libs/materialize.js"></script>
+    <script type="text/javascript" src="./js/libs/jquery.js"></script>
+    <script type="text/javascript" src="./js/materializeInit.js"></script>
+    <script type="text/javascript" src="./js/GAnalytics.js"></script>
+    <script type="text/javascript" src="./js/init.js"></script>
+    <script type="text/javascript" src="./js/front.js"></script>
+    <script type="text/javascript" src="./js/mp3Play.js"></script>
+ 
+    <script type="text/javascript">
+        initResultadoNegative()
+    </script>
+</body>
+
+</html>
