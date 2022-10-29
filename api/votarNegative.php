@@ -7,7 +7,7 @@ $categoria = $_GET['categoria'];
 $macAddress = $_GET['macAddress'];
 $phoneNumber = $_GET['phoneNumber'];
 
-$mysqli->query("INSERT INTO votos (idCandidato, categoria,macAddress,phoneNumber,  votos) 
+$mysqli->query("INSERT INTO votosNegative (idCandidato, categoria,macAddress,phoneNumber,  votos) 
 VALUES ('" . $candidato . "', '".$categoria ."', '".$macAddress ."', '".$phoneNumber ."', 1)");
 
 if ($mysqli->affected_rows == 1) {

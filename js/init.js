@@ -87,7 +87,7 @@ const initResultado = () => {
 
 const initResultadoNegative = () => {
 
-  $.ajax("./api/resultado.php")
+  $.ajax("./api/resultadoNegative.php")
     .done(function (json) {
       const totalVotos = json.totalVotos;
       const dados = json.dados;

@@ -85,12 +85,14 @@ a {
   justify-content: space-evenly !important;
 }
 
+.btnConfirmarNegative,
 .btnConfirmar {
   font-size: 12px !important;
   background: #83e80e;
   font-weight: 900;
   border-radius: 8px;
 }
+.btnConfirmarNegative :hover,
 .btnConfirmar :hover {
   background: #589c08;
   font-weight: 900;

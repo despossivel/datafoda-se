@@ -225,3 +225,13 @@
 2022/10/28 11:38:33 [notice] 1#1: start worker process 28
 2022/10/28 11:38:33 [notice] 1#1: start worker process 29
 2022/10/28 11:39:00 [error] 28#28: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost"
+2022/10/29 12:01:44 [notice] 1#1: using the "epoll" event method
+2022/10/29 12:01:44 [notice] 1#1: nginx/1.23.2
+2022/10/29 12:01:44 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/10/29 12:01:44 [notice] 1#1: OS: Linux 5.10.124-linuxkit
+2022/10/29 12:01:44 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/10/29 12:01:44 [notice] 1#1: start worker processes
+2022/10/29 12:01:44 [notice] 1#1: start worker process 29
+2022/10/29 12:01:44 [notice] 1#1: start worker process 30
+2022/10/29 17:06:42 [error] 30#30: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2022/10/29 17:22:10 [error] 29#29: *49 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /inde%20.html HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"

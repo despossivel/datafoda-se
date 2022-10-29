@@ -4,6 +4,7 @@ $(document).on("click", ".boxCandidato", function () {
   const nome = $(`#${id}`).find('.headBox').find('.nome').html()
 
   $('.btnConfirmar').attr('id', id)
+  $('.btnConfirmarNegative').attr('id', id)
   $('#titleModal').html(nome)
   $('.containerModal').html(foto);
   $('.modal-footer').show()
@@ -12,6 +13,8 @@ $(document).on("click", ".boxCandidato", function () {
 
 $(document).on('click', '.btnConfirmar', function () {
   const id = $(this).attr('id')
+
+  console.log(id)
 
   $('.modal-footer').hide()
   $('.modal-content').html("<div class='displayFlex'><div class='loaderMin'></div></div>");
@@ -23,6 +26,8 @@ $(document).on('click', '.btnConfirmar', function () {
 
 $(document).on('click', '.btnConfirmarNegative', function () {
   const id = $(this).attr('id')
+
+  console.log(id)
 
   $('.modal-footer').hide()
   $('.modal-content').html("<div class='displayFlex'><div class='loaderMin'></div></div>");
@@ -72,7 +77,8 @@ const requestVoto = (id) => M.toast({
             }
 
             playSong('comfirmacao');
-            setTimeout(() => location.reload(), 2500)
+            // setTimeout(() => location.reload(), 2500)
+            setTimeout(() => (window.location.href = 'negative.html'), 2500)
           }
         })
 
@@ -107,7 +113,8 @@ const requestVotoNegative = (id) => M.toast({
             }
 
             playSong('comfirmacao');
-            setTimeout(() => location.reload(), 2500)
+            // setTimeout(() => location.reload(), 2500)
+            setTimeout(() => (window.location.href = 'index.html'), 2500)
           }
         })
 
