@@ -235,3 +235,36 @@
 2022/10/29 12:01:44 [notice] 1#1: start worker process 30
 2022/10/29 17:06:42 [error] 30#30: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
 2022/10/29 17:22:10 [error] 29#29: *49 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.18.0.1, server: localhost, request: "GET /inde%20.html HTTP/1.1", upstream: "fastcgi://172.18.0.4:9000", host: "localhost"
+2023/10/18 23:46:39 [notice] 1#1: using the "epoll" event method
+2023/10/18 23:46:39 [notice] 1#1: nginx/1.25.2
+2023/10/18 23:46:39 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/10/18 23:46:39 [notice] 1#1: OS: Linux 5.15.49-linuxkit
+2023/10/18 23:46:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/10/18 23:46:39 [notice] 1#1: start worker processes
+2023/10/18 23:46:39 [notice] 1#1: start worker process 28
+2023/10/18 23:46:39 [notice] 1#1: start worker process 29
+2023/10/18 23:47:06 [error] 28#28: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "localhost"
+2023/10/18 23:49:45 [error] 28#28: *9 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /resultadoNeegative.html HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "localhost"
+2023/10/22 12:55:08 [error] 28#28: *24 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "localhost"
+2023/10/22 12:57:48 [error] 28#28: *32 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/Mateus.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "localhost", referrer: "http://localhost/index.html"
+2023/10/22 13:00:01 [error] 28#28: *37 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/daniNolleto.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "localhost", referrer: "http://localhost/index.html"
+2023/10/22 13:07:37 [error] 29#29: *41 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/daniNolleto.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "localhost", referrer: "http://localhost/index.html"
+2023/10/22 13:07:37 [error] 29#29: *40 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/Maik.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "localhost", referrer: "http://localhost/index.html"
+2023/10/22 13:10:37 [error] 28#28: *46 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /imgs/candidatos/daniNolleto.jpg HTTP/1.1", upstream: "fastcgi://172.19.0.2:9000", host: "localhost", referrer: "http://localhost/index.html"
+2023/10/22 13:12:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/10/22 13:12:14 [notice] 28#28: gracefully shutting down
+2023/10/22 13:12:14 [notice] 29#29: gracefully shutting down
+2023/10/22 13:12:14 [notice] 29#29: exiting
+2023/10/22 13:12:14 [notice] 29#29: exit
+2023/10/22 13:12:15 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/10/22 13:12:15 [notice] 1#1: worker process 29 exited with code 0
+2023/10/22 13:12:15 [notice] 1#1: signal 29 (SIGIO) received
+2023/10/22 13:12:46 [notice] 1#1: using the "epoll" event method
+2023/10/22 13:12:46 [notice] 1#1: nginx/1.25.2
+2023/10/22 13:12:46 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/10/22 13:12:46 [notice] 1#1: OS: Linux 5.15.49-linuxkit
+2023/10/22 13:12:46 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/10/22 13:12:46 [notice] 1#1: start worker processes
+2023/10/22 13:12:46 [notice] 1#1: start worker process 28
+2023/10/22 13:12:46 [notice] 1#1: start worker process 29
+2023/10/22 13:13:07 [error] 29#29: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.23.0.1, server: localhost, request: "GET /imgs/candidatos/Dionizio.jpg HTTP/1.1", upstream: "fastcgi://172.23.0.4:9000", host: "localhost"
